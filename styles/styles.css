@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+.logo-text{
+    font-size: 30px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.login button{
+    border: none;
+    text-transform: uppercase;
+    background: none;
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .menu-icon{
+        display: inline-block;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:577px) and (max-width:768px){
+    .navbar{
+        padding: 5px 20px;
+    }
+    .navbar ul{
+        gap: 10px;
+    }
+    .logo-text{
+        font-size: 30px;
+    }
+    
+}
