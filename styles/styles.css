@@ -43,6 +43,7 @@
 
 /* banner */
 .banner-container {
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,49 +80,70 @@
   width: 100%;
 }
 
-section{
-    padding: 20px 15%;
+section {
+  margin: 5px 5%;
+  padding: 30px 10%;
 }
 
 /* furniture section */
 
-.furniture-container{
-    margin-top: 40px;
+.furniture-container {
+  margin-top: 40px;
 }
-.furniture-cards-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    margin: 20px 0px;
-
+.furniture-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0px;
 }
-.furniture-card{
-    background-color: #F7FAFA;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px; 
+.furniture-card {
+  background-color: #f7fafa;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
-.furniture-card div img{
-    width: 100%;
-    height: 200px;
-}
-
-.furniture-card-text{
-    display: flex;
-    align-items: center;
-    gap:10px;
-    
-}
-.furniture-card-text div button{
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: #80AAAE;
+.furniture-card div img {
+  width: 100%;
+  height: 200px;
 }
 
+.furniture-card-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.furniture-card-text div button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #80aaae;
+}
 
+/* About us */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #f9fafa;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.about-container button {
+  width: 20%;
+  padding: 10px 15px;
+  border: none;
+  background-color: #6bb7be;
+  color: white;
+  font-weight: bold;
+}
 
 /* Mobile */
 
@@ -153,13 +175,21 @@ section{
     width: 100%;
   }
 
-  .furniture-cards-container{
+  .furniture-cards-container {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     margin: 20px 0px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container button{
+    width: 30%;
+    padding: 10px 10px;
+  }
 
-}
 }
 
 /* Tablet */
@@ -192,11 +222,14 @@ section{
     width: 100%;
   }
 
-  .furniture-cards-container{
+  .furniture-cards-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin: 20px 0px;
-
-}
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
