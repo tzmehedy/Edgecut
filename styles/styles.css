@@ -149,7 +149,7 @@ section {
 
 }
 
-.blog-container-heading{
+.heading{
      text-align: center;
 }
 .blog-card-container{
@@ -181,6 +181,30 @@ section {
     background-color: #6BB7BE;
     border: none;
 }
+
+
+/* testimonial */
+.testimonial-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow:3px 3px 5px 3px rgb(225, 224, 224) ;
+    margin: 20px 150px;
+    padding: 10px 30px;
+}
+
+
+.testimonial-content-image img{
+    max-width: 120px;
+    max-height: 120px;
+    border: 7px solid #6BB7BE;
+    border-radius: 100%;
+}
+.name{
+    color: #6BB7BE;
+}
+
 
 /* Mobile */
 
@@ -229,6 +253,11 @@ section {
   .blog-card-container{
     grid-template-columns: repeat(1,1fr);
   }
+  .testimonial-content-container{
+    flex-direction: column;
+    margin: 0px 0px;
+    padding: 5px 10px;
+  }
 
 }
 
@@ -274,5 +303,10 @@ section {
   }
   .blog-card-container{
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .testimonial-content-container{
+    margin: 0px 0px;
+    padding: 5px 10px;
   }
 }
